@@ -1,0 +1,33 @@
+@font-face { font-family: Fredoka; src: url(fonts/Fredoka_600SemiBold.ttf); font-weight: 600; font-display: swap; }
+@font-face { font-family: Nunito; src: url(fonts/Nunito_400Regular.ttf); font-weight: 400; font-display: swap; }
+@font-face { font-family: Nunito; src: url(fonts/Nunito_700Bold.ttf); font-weight: 700; font-display: swap; }
+
+:root { --rosa: #E58FA9; --rosa-claro: #FBE3EA; --fondo: #F2F7EC; --texto: #4A3B40; --suave: #7D6970; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 400 17px/1.6 Nunito, system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+h1, h2, h3 { font-family: Fredoka, Nunito, sans-serif; font-weight: 600; line-height: 1.25; }
+h1 { font-size: 2rem; margin: 0 0 4px; }
+h2 { font-size: 1.3rem; margin: 32px 0 8px; color: var(--rosa); }
+a { color: #C2577A; }
+.cabecera { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; margin-bottom: 24px; }
+.cabecera img { width: 48px; height: 48px; border-radius: 12px; }
+.cabecera span { font-family: Fredoka, sans-serif; font-weight: 600; font-size: 1.3rem; }
+.tarjeta { background: #fff; border-radius: 24px; padding: 28px 24px; box-shadow: 0 6px 24px rgba(229, 143, 169, .15); }
+.fecha { color: var(--suave); font-size: .95rem; margin: 0 0 16px; }
+.idiomas { gap: 8px; margin-bottom: 16px; }
+.idiomas button { font: 700 .9rem Nunito, sans-serif; border: 2px solid var(--rosa); background: #fff; color: var(--rosa); border-radius: 999px; padding: 6px 16px; cursor: pointer; }
+.idiomas button.activo { background: var(--rosa); color: #fff; }
+.js [data-l]:not(.visible) { display: none; }
+.idiomas { display: none; }
+.js .idiomas { display: flex; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.portada { text-align: center; }
+.portada img { width: 128px; height: 128px; border-radius: 30px; box-shadow: 0 8px 28px rgba(229, 143, 169, .35); }
+.lema { color: var(--suave); font-size: 1.15rem; margin: 4px 0 24px; }
+.tiendas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 8px 0 8px; }
+.boton { display: inline-block; background: var(--rosa); color: #fff; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; }
+.boton.pronto { background: var(--rosa-claro); color: #C2577A; }
+footer { text-align: center; color: var(--suave); font-size: .95rem; margin-top: 32px; }
+footer a { margin: 0 8px; }
