@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeddyCloset</title>
+<link rel="icon" href="icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF0F4;--ink:#5A2A3A;--sub:#A3707F;--pink:#FF8FB1}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 85% 10%,#FFC2D4 0 220px,transparent 221px),var(--bg);color:var(--ink);font:17px/1.6 Nunito,system-ui,sans-serif;padding:24px}
+main{max-width:520px;text-align:center}
+img{width:132px;height:132px;border-radius:32px;box-shadow:0 14px 34px rgba(255,111,156,.3)}
+h1{font:600 46px/1.05 Fredoka,sans-serif;margin:22px 0 8px}h1 span{color:var(--pink)}
+p{margin:0 0 10px;color:var(--sub);font-weight:700}
+.links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+a{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border-radius:999px;background:#fff;color:var(--ink);font-weight:800;text-decoration:none;box-shadow:0 4px 14px rgba(90,42,58,.1)}
+a.main{background:var(--pink);color:#fff}
+[lang-block]{display:none}[lang-block].on{display:block}
+</style>
+</head>
+<body>
+<main>
+  <img src="icono.png" alt="TeddyCloset">
+  <h1>Teddy<span>Closet</span></h1>
+  <div lang-block="es">
+    <p>Ordena tu armario sin fotos: apunta tu ropa con + y − y Teddy te dice exactamente qué te sobra.</p>
+    <p>Funciona sin internet. Todo se guarda solo en tu móvil.</p>
+    <div class="links">
+      <a class="main" href="privacidad.html">Política de privacidad</a>
+      <a href="mailto:teddytimer.app@gmail.com">Soporte: teddytimer.app@gmail.com</a>
+    </div>
+  </div>
+  <div lang-block="en">
+    <p>Declutter your closet without photos: count your clothes with + and − and Teddy tells you exactly what is extra.</p>
+    <p>Works offline. Everything stays on your phone.</p>
+    <div class="links">
+      <a class="main" href="privacidad.html">Privacy policy</a>
+      <a href="mailto:teddytimer.app@gmail.com">Support: teddytimer.app@gmail.com</a>
+    </div>
+  </div>
+</main>
+<script>
+{
+  const l = (navigator.language || 'es').toLowerCase().startsWith('es') ? 'es' : 'en';
+  document.documentElement.lang = l;
+  document.querySelectorAll('[lang-block]').forEach((b) => b.classList.toggle('on', b.getAttribute('lang-block') === l));
+}
+</script>
+</body>
+</html>
