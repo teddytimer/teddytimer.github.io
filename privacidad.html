@@ -3,146 +3,85 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacidad · TeddyTimer</title>
-<link rel="icon" href="favicon.png">
-<link rel="stylesheet" href="estilo.css">
-<script src="idioma.js"></script>
+<title>TeddyCloset · Privacidad</title>
+<link rel="icon" href="icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF0F4;--ink:#5A2A3A;--sub:#A3707F;--pink:#FF8FB1;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Nunito,system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+header img{width:56px;height:56px;border-radius:16px}
+h1{font:600 34px/1.1 Fredoka,sans-serif;margin:0}
+h2{font:600 21px/1.2 Fredoka,sans-serif;margin:28px 0 6px}
+.card{background:var(--card);border-radius:22px;padding:8px 22px 18px;box-shadow:0 4px 16px rgba(90,42,58,.07);margin-top:18px}
+.sub{color:var(--sub);font-weight:700;font-size:15px}
+.lang{display:flex;gap:8px;margin:14px 0}
+.lang button{font:800 14px Nunito,sans-serif;border:0;border-radius:999px;padding:10px 16px;min-height:44px;background:#fff;color:var(--ink);cursor:pointer}
+.lang button.on{background:var(--pink);color:#fff}
+a{color:#D9487A;font-weight:800}
+[lang-block]{display:none}[lang-block].on{display:block}
+</style>
 </head>
 <body>
 <main>
-<a class="cabecera" href="./"><img src="icono.png" alt=""><span>TeddyTimer</span></a>
-<div class="tarjeta">
-<div class="idiomas"><button data-ir="es">Español</button><button data-ir="en">English</button></div>
+  <header><img src="icono.png" alt=""><h1>TeddyCloset</h1></header>
+  <div class="lang"><button id="b-es" type="button">Español</button><button id="b-en" type="button">English</button></div>
 
-<section data-l="es">
-<h1>Política de privacidad</h1>
-<p class="fecha">Última actualización: 23 de noviembre de 2026</p>
-<p>TeddyTimer es un temporizador pomodoro. Esta política explica qué pasa con tus datos cuando la usas. Resumen: <strong>la app no recoge ni envía ningún dato tuyo</strong>.</p>
+  <div lang-block="es">
+    <p class="sub">Política de privacidad · última actualización: 24 de noviembre de 2026</p>
+    <div class="card">
+      <h2>En pocas palabras</h2>
+      <p>TeddyCloset <b>no recoge, no envía y no comparte ningún dato personal</b>. Todo lo que apuntas se guarda solo en tu móvil.</p>
+      <h2>Responsable</h2>
+      <p>Sara Fernandez Becerra. Contacto: <a href="mailto:teddytimer.app@gmail.com">teddytimer.app@gmail.com</a></p>
+      <h2>Qué guarda la app</h2>
+      <p>Las prendas que apuntas, tu plan para ordenar el armario, tu progreso en el reto de 30 días, el tema de color y el idioma. Esta información se queda en tu dispositivo y no sale de él.</p>
+      <h2>Qué no hace</h2>
+      <p>No hay cuentas ni registro, no hay servidor, no hay estadísticas de uso, no hay anuncios y no hay rastreo. La app funciona sin internet y no pide permisos (ni cámara, ni fotos, ni ubicación).</p>
+      <h2>Cómo borrar tus datos</h2>
+      <p>En la app, ve a Ajustes y pulsa «Borrar todos mis datos». También se borran al desinstalar la app.</p>
+      <h2>Menores</h2>
+      <p>La app no recoge datos de nadie, tampoco de menores.</p>
+      <h2>Cambios</h2>
+      <p>Si en una versión futura se añaden anuncios u otros servicios, esta política se actualizará antes de publicar esa versión.</p>
+    </div>
+  </div>
 
-<h2>Quién es la responsable</h2>
-<ul>
-<li>Sara Fernandez Becerra, desarrolladora de TeddyTimer.</li>
-<li>Contacto: <a href="mailto:teddytimer.app@gmail.com">teddytimer.app@gmail.com</a></li>
-</ul>
-
-<h2>Qué datos usa la app</h2>
-<ul>
-<li>Tus ajustes, temas, sonidos elegidos, tareas, rondas y rachas se guardan solo en tu móvil.</li>
-<li>No se envían a ningún servidor, ni nuestro ni de nadie.</li>
-<li>No hay cuentas ni registro.</li>
-<li>No hay anuncios.</li>
-<li>No hay estadísticas de uso ni herramientas de análisis.</li>
-<li>No se hace seguimiento entre apps ni webs.</li>
-</ul>
-
-<h2>Notificaciones</h2>
-<ul>
-<li>Si das permiso, la app te avisa cuando acaba un pomodoro o un descanso.</li>
-<li>Los avisos se programan dentro de tu propio móvil, sin pasar por internet.</li>
-<li>Puedes quitar el permiso cuando quieras en los ajustes del móvil.</li>
-</ul>
-
-<h2>App Store y Google Play</h2>
-<ul>
-<li>Cuando descargas la app, Apple o Google tratan los datos de la descarga según sus propias políticas de privacidad.</li>
-<li>Nosotros solo vemos cifras generales y anónimas que dan las tiendas (por ejemplo, número de descargas por país).</li>
-</ul>
-
-<h2>Si nos escribes</h2>
-<ul>
-<li>Si nos mandas un correo, usamos tu dirección y tu mensaje solo para responderte.</li>
-<li>Lo guardamos el tiempo necesario para atender tu consulta y lo borramos después.</li>
-<li>La base legal es tu consentimiento al escribirnos.</li>
-</ul>
-
-<h2>Tus derechos</h2>
-<ul>
-<li>Puedes pedir acceder a tus datos, corregirlos, borrarlos, limitar su uso u oponerte, escribiendo a <a href="mailto:[[CORREO]]">[[CORREO]]</a>.</li>
-<li>Si crees que no hemos respetado tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>).</li>
-</ul>
-
-<h2>Cómo borrar tus datos</h2>
-<ul>
-<li>Como todo está en tu móvil, basta con desinstalar la app para borrarlo todo.</li>
-</ul>
-
-<h2>Niñas y niños</h2>
-<ul>
-<li>La app no recoge datos de nadie, tampoco de menores.</li>
-</ul>
-
-<h2>Cambios</h2>
-<ul>
-<li>Si en el futuro la app incluye anuncios o compras, actualizaremos esta política antes de que llegue esa versión.</li>
-<li>Si hiciera falta tu consentimiento, la app te lo pedirá antes de usar ningún dato.</li>
-</ul>
-</section>
-
-<section data-l="en">
-<h1>Privacy Policy</h1>
-<p class="fecha">Last updated: November 23, 2026</p>
-<p>TeddyTimer is a pomodoro timer. This policy explains what happens to your data when you use it. In short: <strong>the app does not collect or send any of your data</strong>.</p>
-
-<h2>Who is responsible</h2>
-<ul>
-<li>Sara Fernandez Becerra, developer of TeddyTimer.</li>
-<li>Contact: <a href="mailto:teddytimer.app@gmail.com">teddytimer.app@gmail.com</a></li>
-</ul>
-
-<h2>What data the app uses</h2>
-<ul>
-<li>Your settings, themes, chosen sounds, tasks, rounds and streaks are stored only on your phone.</li>
-<li>They are never sent to any server, ours or anyone else's.</li>
-<li>There are no accounts and no sign-up.</li>
-<li>There are no ads.</li>
-<li>There are no usage statistics or analytics tools.</li>
-<li>There is no tracking across apps or websites.</li>
-</ul>
-
-<h2>Notifications</h2>
-<ul>
-<li>If you allow it, the app lets you know when a pomodoro or a break ends.</li>
-<li>Notifications are scheduled on your own phone, without using the internet.</li>
-<li>You can turn the permission off at any time in your phone settings.</li>
-</ul>
-
-<h2>App Store and Google Play</h2>
-<ul>
-<li>When you download the app, Apple or Google process the download data under their own privacy policies.</li>
-<li>We only see general, anonymous figures provided by the stores (for example, downloads per country).</li>
-</ul>
-
-<h2>If you email us</h2>
-<ul>
-<li>If you send us an email, we use your address and message only to reply to you.</li>
-<li>We keep it for as long as needed to answer and delete it afterwards.</li>
-<li>The legal basis is your consent when you write to us.</li>
-</ul>
-
-<h2>Your rights</h2>
-<ul>
-<li>You can ask to access, correct, delete, restrict or object to the use of your data by writing to <a href="mailto:teddytimer.app@gmail.com">teddytimer.app@gmail.com</a>.</li>
-<li>If you think your rights have not been respected, you can complain to the Spanish Data Protection Agency (<a href="https://www.aepd.es">www.aepd.es</a>) or your local authority.</li>
-</ul>
-
-<h2>How to delete your data</h2>
-<ul>
-<li>Since everything is on your phone, uninstalling the app deletes it all.</li>
-</ul>
-
-<h2>Children</h2>
-<ul>
-<li>The app does not collect data from anyone, including children.</li>
-</ul>
-
-<h2>Changes</h2>
-<ul>
-<li>If the app adds ads or purchases in the future, we will update this policy before that version is released.</li>
-<li>If your consent is needed, the app will ask for it before using any data.</li>
-</ul>
-</section>
-</div>
-<footer><a href="./">TeddyTimer</a> · <a href="condiciones.html">Condiciones · Terms</a></footer>
+  <div lang-block="en">
+    <p class="sub">Privacy policy · last updated: 24 November 2026</p>
+    <div class="card">
+      <h2>In short</h2>
+      <p>TeddyCloset <b>does not collect, send or share any personal data</b>. Everything you enter stays on your phone.</p>
+      <h2>Controller</h2>
+      <p>Sara Fernandez Becerra. Contact: <a href="mailto:teddytimer.app@gmail.com">teddytimer.app@gmail.com</a></p>
+      <h2>What the app stores</h2>
+      <p>The items you count, your declutter plan, your 30-day challenge progress, your color theme and your language. This stays on your device and never leaves it.</p>
+      <h2>What it does not do</h2>
+      <p>No accounts or sign-up, no server, no usage analytics, no ads and no tracking. The app works offline and asks for no permissions (no camera, photos or location).</p>
+      <h2>How to delete your data</h2>
+      <p>In the app, go to Settings and tap “Delete all my data”. Uninstalling the app also deletes it.</p>
+      <h2>Children</h2>
+      <p>The app collects no data from anyone, including children.</p>
+      <h2>Changes</h2>
+      <p>If a future version adds ads or other services, this policy will be updated before that version is released.</p>
+    </div>
+  </div>
 </main>
+<script>
+{
+  const set = (l) => {
+    document.documentElement.lang = l;
+    document.querySelectorAll('[lang-block]').forEach((b) => b.classList.toggle('on', b.getAttribute('lang-block') === l));
+    document.getElementById('b-es').className = l === 'es' ? 'on' : '';
+    document.getElementById('b-en').className = l === 'en' ? 'on' : '';
+  };
+  set((navigator.language || 'es').toLowerCase().startsWith('es') ? 'es' : 'en');
+  document.getElementById('b-es').addEventListener('click', () => set('es'));
+  document.getElementById('b-en').addEventListener('click', () => set('en'));
+}
+</script>
 </body>
 </html>
