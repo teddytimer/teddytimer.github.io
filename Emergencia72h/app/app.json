@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Emergencia 72h",
+    "slug": "emergencia72h",
+    "scheme": "emergencia72h",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0F1217",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F1217"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.emergencia72h.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleAllowMixedLocalizations": true
+      },
+      "privacyManifests": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyCollectedDataTypes": []
+      },
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.emergencia72h.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F1217",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "predictiveBackGestureEnabled": false,
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-localization",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Emergencia 72h usa la cámara solo para encender el flash (linterna y señal SOS). No hace fotos ni vídeos.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ]
+    ],
+    "locales": {
+      "es": "./locales/es.json",
+      "en": "./locales/en.json"
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

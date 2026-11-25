@@ -1,0 +1,9 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Emergency",
+    "NSCameraUsageDescription": "Emergency 72h uses the camera only to turn on the flash (torch and SOS signal). It takes no photos or videos."
+  },
+  "android": {
+    "app_name": "Emergency"
+  }
+}

@@ -1,0 +1,39 @@
+:root {
+  --bg: #0f1217;
+  --surface: #171b22;
+  --border: #2a313d;
+  --text: #f2f4f7;
+  --soft: #a3acba;
+  --urgent: #f0443e;
+  --calm: #2fbf9f;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+a { color: var(--calm); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; }
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); font-weight: 800; font-size: 20px; }
+.brand img { width: 44px; height: 44px; border-radius: 10px; }
+nav a { color: var(--soft); text-decoration: none; margin-left: 14px; font-size: 15px; }
+nav a:hover, nav a[aria-current="page"] { color: var(--text); }
+h1 { font-size: 34px; line-height: 1.2; margin: 40px 0 8px; }
+h2 { font-size: 22px; margin: 36px 0 8px; }
+.lead { color: var(--soft); font-size: 19px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 20px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--soft); font-size: 15px; }
+.tag { display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: 1px; padding: 3px 10px; border-radius: 999px; }
+.tag.urgent { color: var(--urgent); background: #3a1517; }
+.tag.calm { color: var(--calm); background: #10302a; }
+.notice { border-left: 4px solid #ffc53d; background: #3a2b10; color: #ffd27a; padding: 14px 16px; border-radius: 10px; margin-top: 24px; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+footer { margin-top: 56px; color: var(--soft); font-size: 14px; border-top: 1px solid var(--border); padding-top: 16px; }
+.btn { display: inline-block; background: var(--calm); color: #06201a; font-weight: 800; padding: 12px 18px; border-radius: 12px; text-decoration: none; margin-top: 12px; }
